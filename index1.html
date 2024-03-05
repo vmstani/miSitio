@@ -27,31 +27,28 @@
 </head>
 <body>
     <!-- NAVEGATION -->
-    <nav class="navbar navbar-expand-lg navbar-dark background-overlay" id="top_page">
-      <div class="container-sm">
-        <a class="navbar-brand" href="/">
-          <img src="img/logo1.png" class="logo">
-        </a>
-       </div>
+    <nav class="navbar navbar-expand-lg navbar-dark background-overlay">
+      <a class="navbar-brand" href="#home">
+        <img src="img/logo1.png" style="width: 32%;" class="logo">
+      </a>
+      <div class="container">
         <div class="d-flex flex wrap">
           <div id="flag_es" class="flags p-3">
             <div class="flags_item" data-language="es">
             <img src="img/spain.png" alt="icono español">
           </div>
         </div>
-          <div id="flag_en" class="flags p-3">
+          <div id="flag_en" class="flags  p-3">
             <div class="flags_item" data-language="en">
             <img src="img/usa.png" alt="icono ingles">
           </div>
         </div>
         </div>
           
-        <div class="d-flex flex-wrap flex-column w-100">
-          <div class="d-flex justify-content-end">
-            <button class="navbar-toggler w-25" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
+        <div class="d-flex flex-wrap">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -70,27 +67,12 @@
                 <a class="nav-link" href="#contact1">Contact</a>
               </li>
             </ul>
-
-            <div class="d-flex flex wrap">
-              <div id="flag_es" class="flags_mobile p-3">
-                <div class="flags_item" data-language="es">
-                  <img src="img/spain.png" alt="icono español">
-                </div>
-              </div>
-              <div id="flag_en" class="flags_mobile p-3">
-                <div class="flags_item" data-language="en">
-                  <img src="img/usa.png" alt="icono ingles">
-                </div>
-              </div>
-            </div>
-
-          
           </div>
         </div>
-    
+      </div>
       </nav>
     
-
+  
     
 
     <!-- HEADER -->
@@ -382,44 +364,40 @@
               <h2 class="title_contact" >Contact</h2>
               <h3 class="subtitle_contact">Feel free to contact me and talk about 
                 a freelance job, or in a company, or 
-                just.. chat!
-              </h3>
+                just.. chat!</h3>
               <div class="container">
-                <div class="d-flex flex-wrap justify-content-center">
+                 <div class="d-flex flex-wrap justify-content-center">
                   <span class="p-3"><a href="https://www.linkedin.com/in/veronica-mariela-stanislavsky/" target="_blank"><img class="img-01" src="img/linedin.png"  alt="icon linedin" ></a> Contact me on Linkedin</span>
                   <span class="p-3"><a href="mailto:vmstani@gmail.com"><img class="img-02" src="img/email.jpg"  alt="icon email"></a> Send me an Email</span>
                   <span class="p-3"><a href="https://www.behance.net/phstanis" target="_blank"><img class="img-03" src="img/behance.png"  alt="icon behance"></a>Follow me on Behance</span>
  
                 </div>
-              </div> 
+                </div> 
                 
-            </div>
+              </div>
              
-            <div>
-             <form action="https://formspree.io/f/mrgnkreg" class="form" method="post" id="form">
+              <div>
+             <form action="" class="form">
                  
-                  <input name="name"  type="text" class="form-input" id="name" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1 ro" required>
+                  <input type="text" class="form-input" id="name" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1 ro">
               
                  
-                  <input name="email" type="text" class="form-input"  id="email" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" required>
-                  
-
+                  <input type="text" class="form-input"  id="mail" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+               
               
-                  <textarea name="message" cols="30" rows="10" placeholder="Message" class="form-textarea" id="message" required></textarea>
+                  <textarea name="" cols="30" rows="10" placeholder="Message" class="form-textarea" id="message"></textarea>
              
                 
                 <div class="d-flex flex-wrap gap-2 col-3 mx-auto">
-                  <button class="btn" type="submit" id="submitted">Submit</button>
+                  <button class="btn" type="submit">Submit</button>
                 </div>
-              
-                <p name="message_sent" id="message_sent" class="message_sent">Thank you very much, I will contact you soon</p>
-                <p name="message_error" id="message_error" class="message_error">Ha ocurrido un error</p>
-              
               </form> 
             </div>
+            </div>
           </div>
-          </div>
-          
+          <div class=" goup d-flex flexp-5" id="goup">
+            <a href="#navbarNav"> <i class="fa-solid fa-circle-arrow-up"></i>Go up</a>
+        </div>
         </div>
      
       </section>
@@ -434,60 +412,11 @@
         </div>       
       </footer>
 
-      <div class="go_up" id="go_up">
-        <i class="fa-solid fa-circle-arrow-up"></i>
-        <a href="#top_page">Go up</a>
-      </div>
-
    
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  
-    
-  <script>
-
-    const $form = document.getElementById('form')
-    
-    $form.addEventListener('submit', handleSubmit)
-
-    async function handleSubmit(event){
-    event.preventDefault()
-
-          
-      var emailInput = document.getElementById('message_email_error');
-     
-
-      if(validateEmail){
-            const form = new FormData(this)
-            const response = await fetch(this.action, {
-                  method: this.method,
-                  body: form,
-                  headers:{
-                    'Accept': 'application/json'
-                  }
-            })
-      
-          const x = document.getElementById('message_sent');
-          const y = document.getElementById('message_error');
-          
-            if (response.ok){
-              x.style.display = 'block';
-              console.log(x);
-              } else {
-                  y.style.display = 'none';
-                  console.log(y);
-              }          
-
-            } else {
-                emailInput.style.display = 'block';
-                console.log(emailInput);
-            }
-        }
-  </script>
-
-    
-  
+    <script src="scripts.js"></script>
   </body>
 </html>
