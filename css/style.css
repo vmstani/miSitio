@@ -1,12 +1,10 @@
 
-
-
 .navbar {
     box-shadow: 2px 2px 5px #5a306b;
     opacity: 0.9;
     
-  }
-  
+}
+
   .navbar .nav-item .nav-link {
     color: #fff;
     padding: 8px 12px;
@@ -18,24 +16,18 @@
   
   }
 
+  .navbar-brand {
+    width: 100%;
+    max-width: 70%;
+  }
 
-   @media (max-width:768px){
-     .logo{
-      padding: 5px;
-     }
+  .navbar-brand_mobile {
+    display: none;
+  }
 
-     .flags{
-      visibility: hidden;
-     }
-     .nav-item, .nav-link{
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      left: 100%;
-      top:70px
-     }
-   }
+  .logo {
+    width: 50%;
+  }
 
 
   .nav-link:hover {
@@ -183,12 +175,15 @@
  color:#888;
 }
 
-.flags {
+.flags, .flags_mobile{
   width: 75px;
   display: flex;
   align-items:left;
   justify-content: space-between;
-  
+}
+
+.flags_mobile {
+  display: none;
 }
 
 .flags_item {
@@ -226,6 +221,7 @@
   width: 200px;
   padding: 20px;
   text-align: center;
+  align-items: center;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -437,10 +433,67 @@ textarea{
 }
 
 
-.goup{
-  padding-left: 1500px;
-  padding-top: 50px;
+.go_up{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   font-size: 30px;
   font-family: Raleway,sans-serif;
   color: #c482f0;
 }
+
+.message_sent, .message_error{
+  display: none;
+  color:  rgba(77, 2, 121, 0.7);
+  font-size: 1 rem;
+  font-weight: bold;
+  margin-top: 20px;
+  align-content:center;
+}
+
+@media (max-width:1024px){
+  .navbar-brand {
+    max-width: 30%;
+  }
+}
+
+
+@media (max-width:768px){
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-brand_mobile {
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo{
+   padding: 5px;
+   width: 150px;
+  }
+
+  .flags{
+   display: none;
+  }
+  .flags_mobile{
+    display: flex;
+    align-items: center;
+    width: 100%;
+   }
+   #flag_es {
+    justify-content: end;
+   }
+   #flag_en {
+    justify-content: start;
+   }
+  .nav-item, .nav-link{
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   left: 100%;
+   top:70px
+  }
+}
+
