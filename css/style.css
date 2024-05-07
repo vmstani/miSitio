@@ -1,28 +1,26 @@
 
 .navbar {
     box-shadow: 2px 2px 5px #5a306b;
-    opacity: 0.9;
-    
+    opacity: 0.9; 
 }
 
   .navbar .nav-item .nav-link {
     color: #fff;
     padding: 8px 12px;
     display: flex;
-    top: 0;
+    top: 50px;
     border-radius: 3px;
     max-width: 992px;
-    margin: 0px auto;
-  
+    margin: 0px auto; 
   }
 
   .navbar-brand {
     width: 100%;
-    max-width: 70%;
+    max-width: 70%;  
   }
 
   .navbar-brand_mobile {
-    display: none;
+    display: none; 
   }
 
   .logo {
@@ -493,7 +491,7 @@ textarea{
    align-items: center;
    justify-content: center;
    left: 100%;
-   top:70px
-  }
+   top:70px;
+
 }
 
