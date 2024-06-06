@@ -52,7 +52,6 @@
 
   .form-control, .btn{
     border-radius: 0;
-
   }
 
   .team ,footer {
@@ -412,7 +411,7 @@ section[id]{
 
 
 .form{
-  width: 450px;
+  width: 500px;
   margin: auto;
   background: rgba(211, 160, 240, 0.7);
   padding: 10px 20px;
@@ -467,17 +466,20 @@ textarea{
 
 @media (max-width:768px){
   .navbar-brand {
-    display: none;
+    display: flex;
+    
   }
   .navbar-brand_mobile {
     width: 100%;
-    max-width: 50%;
+    max-width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
   }
   .logo{
-   padding: 5px;
+   padding: 20px;
    width: 150px;
+   display: flex;
+   align-items: center;
   }
 
   .flags{
@@ -501,6 +503,10 @@ textarea{
    justify-content: center;
    left: 100%;
    top:70px;
+
+}
+.form{
+  width: 100%;
 
 }
 }
