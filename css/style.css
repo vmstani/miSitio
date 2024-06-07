@@ -474,12 +474,13 @@ textarea{
     max-width: 100%;
     display: flex;
     align-items: center;
+    
   }
   .logo{
-   padding: 20px;
    width: 150px;
    display: flex;
-   align-items: center;
+   left: 100%;
+   top: 70px;
   }
 
   .flags{
@@ -502,11 +503,15 @@ textarea{
    align-items: center;
    justify-content: center;
    left: 100%;
-   top:70px;
+   top: 70px;
 
 }
 .form{
   width: 100%;
 
 }
+.container-sm{
+  width: 50px;
+}
+
 }
