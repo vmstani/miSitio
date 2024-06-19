@@ -470,40 +470,6 @@ textarea{
 }
 }
 
-@media (max-width:850px){
-  .navbar-brand {
-    max-width: 50%;
-  }
-  
-  .logo{
-    width: 200px;
-    display: flex;
-    left: 100%;
-    top: 70px; 
-}
-.flags{
-  display: none;
- }
- .flags_mobile{
-   display: flex;
-   align-items: center;
-   width: 100%;
-  }
-  #flag_es {
-   justify-content: end;
-  }
-  #flag_en {
-   justify-content: start;
-  }
- .nav-item, .nav-link{
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  left: 100%;
-  top: 70px;
-}
-}
 @media (max-width:768px){
   .navbar-brand {
     display: flex;
