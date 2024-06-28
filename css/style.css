@@ -470,50 +470,76 @@ textarea{
 }
 }
 
-@media (max-width:768px){
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Ajusta según tus necesidades */
+  }
+
   .navbar-brand {
     display: flex;
-    
   }
+
   .navbar-brand_mobile {
     width: 100%;
     max-width: 100%;
     display: flex;
     align-items: center;
-    
-  }
-  .logo{
-   width: 200px;
-   display: flex;
-   left: 100%;
-   top: 70px;
-   
   }
 
-  .flags{
-   display: none;
+  .logo {
+    width: 200px;
+    display: flex;
+    position: absolute; /* Mantener el logo en posición fija */
+    top: 10px; /* Ajusta la posición vertical según sea necesario */
+    left: 20px; /* Ajusta la posición horizontal según sea necesario */
   }
-  .flags_mobile{
+
+  .flags {
+    display: none;
+  }
+
+  .flags_mobile {
     display: flex;
     align-items: center;
     width: 100%;
-   }
-   #flag_es {
-    justify-content: end;
-   }
-   #flag_en {
-    justify-content: start;
-   }
-  .nav-item, .nav-link{
-   display: flex;
-   width: 100%;
-   align-items: center;
-   justify-content: center;
-   left: 100%;
-   top: 70px;
-}
-.form{
-  width: 100%;
-}
+    justify-content: space-between; /* Asegura que las banderas estén distribuidas */
+  }
 
+  #flag_es {
+    justify-content: end;
+  }
+
+  #flag_en {
+    justify-content: start;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 60px; /* Ajusta según la altura de tu navbar */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Ajusta según tus necesidades */
+    z-index: 1;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item, .nav-link {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form {
+    width: 100%;
+  }
 }
